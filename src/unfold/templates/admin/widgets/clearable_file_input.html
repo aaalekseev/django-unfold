@@ -30,4 +30,10 @@
             <span class="material-symbols-outlined">file_upload</span>
         </label>
     </div>
+
+    {% if widget.value %}
+        <a class="border cursor-pointer flex items-center h-9.5 justify-center rounded shadow-sm shrink-0 text-gray-400 text-sm transition-colors w-9.5 hover:text-gray-700 dark:border-gray-700 dark:text-gray-500 dark:hover:text-gray-200" href="{{ widget.value.url }}" target="_blank">
+            <span class="material-symbols-outlined text-sm">visibility</span>
+        </a>
+    {% endif %}
 </div>
